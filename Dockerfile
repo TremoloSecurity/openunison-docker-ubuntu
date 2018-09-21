@@ -8,7 +8,7 @@ ENV JDK_VERSION=1.8.0 \
 LABEL io.k8s.description="Platform for building Tremolo Security OpenUnison" \
       io.k8s.display-name="OpenUnison Builder 1.0.15" 
 
-RUN apt-get update;apt-get -y install openjdk-8-jdk-headless wget unzip;apt-get -y upgrade;apt-get clean;rm -rf /var/lib/apt/lists/*; \
+RUN apt-get update;apt-get -y install openjdk-8-jdk-headless wget unzip python;apt-get -y upgrade;apt-get clean;rm -rf /var/lib/apt/lists/*; \
     mkdir -p /etc/openunison && \
     mkdir -p /etc/openunison-local && \
     mkdir -p /usr/local/openunison && \
