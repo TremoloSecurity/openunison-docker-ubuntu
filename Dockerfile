@@ -22,6 +22,7 @@ RUN apt-get update;apt-get -y install openjdk-8-jdk-headless wget unzip python;a
     mkdir -p /usr/local/openunison/bin
 
 ADD run_openunison.sh /usr/local/openunison/bin/run_openunison.sh
+ADD check_alive.py /usr/local/openunison/bin/check_alive.py
 
 RUN chown -R openunison:openunison \
     /etc/openunison \
