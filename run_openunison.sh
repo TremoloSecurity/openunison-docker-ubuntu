@@ -14,6 +14,8 @@ mv WEB-INF/lib ../
 mv WEB-INF/classes ../
 mkdir ../logs
 
+mkdir /tmp/quartz
+mkdir /tmp/amq
 
 export CLASSPATH="$OPENUNISON_WORK/lib/*:$OPENUNISON_WORK/classes:/tmp/quartz"
 echo $CLASSPATH
